@@ -1,0 +1,325 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #636363;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: rgb(248, 245, 245);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.image {
+    flex: 1; /* Takes half the space */
+}
+
+.image img {
+    width: 100%; /* Makes image responsive */
+    max-width: 500px; /* Adjust size as needed */
+}
+
+.text {
+    flex: 1; /* Takes the other half */
+    text-align: left; 
+    padding-left: 20px;
+    color: rgb(43, 37, 37);
+}
+
+.home-image {
+    display: block;
+    width: 100%;
+    max-width: 500px; /* Adjust the max-width as needed */
+    height: auto;
+    margin-left: auto; /* Align the image to the right */
+}
+
+.home-container {
+    display: flex;
+    background-color: black;
+    flex-direction: row-reverse; /* Reverse the order to place the image on the left */
+}
+
+.home-left {
+    padding-left: 20px; /* Adjust padding for the left side */
+    color: #1f1e1ef9; /* Home text color */
+    background-color: blue; /* Add blue background color */
+}
+
+.home-right {
+    padding-right: 20px; /* Adjust padding for the right side */
+    color: red; /* Home text color */
+    
+}
+
+.welcome-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #111010;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#about {
+    background-color:white;
+    color:#ece4e4 ; /* Ensure text color is white */
+    padding: 20px;
+    text-align: center;
+}
+
+#about h2, #about h3 {
+    color: #ff3366;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    margin-top: 0;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    background-color: #333;
+    color: rgb(251, 247, 247); /* Changed text color to black */
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black; /* Added border color black */
+}
+
+.skill-box, .project-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #a5a1a1;
+}
+
+.project {
+    background: #222222;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+#projects {
+    border: 2px solid #424141;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(107, 93, 93); /* Updated background color */
+}
+
+.resume {
+    border: 2px solid #a81919; /* Add border to resume */
+    padding: 20px; /* Add padding to the resume section */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    background-color: #444444 !important; /* Changed background color with higher specificity */
+}
+
+#resume.resume {
+    border: 2px solid #a81919; /* Add border to resume */
+    padding: 20px; /* Add padding to the resume section */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    background-color: #444444; /* Changed background color */
+}
+
+.contact {
+    background-color: #1d1c1c; /* Updated background color */
+    border-bottom: 2px solid #1d1c1c; /* Add border between contact and resume */
+    padding-bottom: 20px; /* Add padding to the bottom of the contact section */
+}
+
+.contact-info {
+    color: black;
+    font-weight: bold; /* Optional: Make it bold */
+    text-align: center; /* Optional: Center align */
+}
+
+#contact h2 {
+    color: #ff6868; /* Updated color for h2 in the contact section */
+}
+#contact P{
+    color: #181818; /* Updated color for p in the contact section */
+}
+
+form {
+    background-color: #fffbfb; /* Light gray background */
+    border: 2px solid #141414; /* Red border */
+    padding: 20px; /* Add padding inside the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+footer {
+    background: #2b2b2b;
+    color: rgb(176, 158, 158);
+    text-align: center;
+    padding: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;  /* Center buttons */
+    gap: 20px; /* Adds space between buttons */
+    margin-top: 20px;
+}
+
+button {
+    font-family: 'Poppins', sans-serif; /* Change to any font you prefer */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: rgb(25, 24, 24);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a6c7e7;
+}
+
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column;  /* Stack buttons vertically */
+        gap: 15px; /* Increase spacing between buttons */
+    }
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 500px; /* Adjust the size */
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    color: #faf9f9; /* Changed color to black for better visibility */
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.hero-text {
+    width: 50%;
+    text-align: left;
+}
+
+.hero-section img {
+    width: 45%; /* Adjust as needed */
+    max-width: 500px;
+    border-radius: 10px;
+    order: 2; /* Moves image to the right */
+}
+
+.section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
